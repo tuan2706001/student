@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class StudentMarkModel extends Model
+{
+    use HasFactory;
+
+    protected $table = 'student';
+
+    public $timestamps = false;
+
+    public $primaryKey = 'idStudent';
+}
