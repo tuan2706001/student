@@ -6,7 +6,7 @@ use App\Models\StudentMarkModel;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-use Student;
+
 
 class AuthenticateController extends Controller
 {
@@ -20,7 +20,7 @@ class AuthenticateController extends Controller
         $password = $request->get('password');
         try {
             $student = StudentMarkModel::where('email', $email)->where('password', $password)->firstOrFail();
-            $request->session()->put('idStudent', $student->idStudent);
+            $request->session()->put('id', $student->idStudent);
             $request->session()->put('nameStudent', $student->nameStudent);
             return Redirect::route("overview");
         } catch (Exception $e) {

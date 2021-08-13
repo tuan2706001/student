@@ -13,39 +13,32 @@
 				<div class="user">
 	                <div class="info">
 						<div class="photo">
-		                    <img src="{{ asset ('assets') }}/img/faces/face-2.jpg" />
+		                    {{ Session::get('avata') }}
 		                </div>
 
-	                    <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+	                    <a href="{{ route('student.index') }}">
 	                        <span>
-								Đào Minh Tún
-		                        <b class="caret"></b>
+							<h6> {{ Session::get('nameStudent') }} </h6>
 							</span>
 	                    </a>
 						<div class="clearfix"></div>
 
-	                    <div class="collapse" id="collapseExample">
+	                    {{-- <div class="collapse" id="collapseExample">
 	                        <ul class="nav">
 	                            <li>
-									<a href="#profile">
+									<a href="../myProfile">
 										<span class="sidebar-mini">Mp</span>
 										<span class="sidebar-normal">My Profile</span>
 									</a>
 								</li>
 	                            <li>
-									<a href="#edit">
+									<a href="../editProfile">
 										<span class="sidebar-mini">Ep</span>
 										<span class="sidebar-normal">Edit Profile</span>
 									</a>
 								</li>
-	                            <li>
-									<a href="#settings">
-										<span class="sidebar-mini">S</span>
-										<span class="sidebar-normal">Settings</span>
-									</a>
-								</li>
 	                        </ul>
-	                    </div>
+	                    </div> --}}
 	                </div>
 	            </div>
 	            <ul class="nav">

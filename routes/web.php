@@ -2,9 +2,9 @@
 
 use App\Http\Controllers\AuthenticateController;
 use App\Http\Controllers\Favourite;
-use App\Http\Controllers\MajorController;
-use App\Http\Controllers\StudentController;
-use App\Http\Middleware\Authenticate;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StudentMarkController;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\CheckLogged;
 use App\Http\Middleware\CheckLogin;
@@ -44,4 +44,6 @@ Route::middleware([CheckLogin::class])->group(function () {
     Route::get("/", function () {
         return view('login');
     });
+    Route::get('/overview', [StudentMarkController::class, 'overview']);
+    Route::resource('student', ProfileController::class);
 });

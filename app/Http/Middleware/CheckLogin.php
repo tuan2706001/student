@@ -23,7 +23,7 @@ class CheckLogin
             return Redirect::route("login")->with('error', [
                 "message" => 'Vui lòng đăng nhâp !',
 
-            ]);
+            ]); ////
         }
     }
 }
