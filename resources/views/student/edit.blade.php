@@ -5,13 +5,25 @@
 	                                <h4 class="card-title">Thông tin cá nhân </h4>
 	                            </div>
 	                            <div class="card-content">
-	                                <form method="get" action="/" class="form-horizontal">
+	                                <form method="post" action="{{ route('student.update', $student->idStudent) }}">
+										@method("PUT")
+           								@csrf 
 	                                    <fieldset>
 	                                        <div class="form-group">
-	                                            <label class="col-sm-2 control-label">Tên sinh viên</label>
+	                                            <label class="col-sm-2 control-label">Họ</label>
 	                                            <div class="col-sm-10">
-	                                                <input type="text" name="name" class="form-control" 
-													value="{{ $student->nameStudent}}" >
+	                                                <input type="text" name="lastName" class="form-control" 
+													value="{{ $student->lastName}}">
+	                                            </div>
+	                                        </div>
+	                                    </fieldset>
+
+										<fieldset>
+	                                        <div class="form-group">
+	                                            <label class="col-sm-2 control-label">Tên</label>
+	                                            <div class="col-sm-10">
+	                                                <input type="text" name="firstName" class="form-control" 
+													value="{{ $student->firstName}}" >
 	                                            </div>
 	                                        </div>
 	                                    </fieldset>
@@ -42,14 +54,7 @@
 	                                            </div>
 	                                        </div>
 	                                    </fieldset>
-                                        <fieldset>
-	                                        <div class="form-group">
-	                                            <label class="col-sm-2 control-label">Tên Lớp</label>
-	                                            <div class="col-sm-10">
-	                                                <input type="text" name="nameGrade"  class="form-control" value="{{ $student->nameGrade }}" >
-	                                            </div>
-	                                        </div>
-	                                    </fieldset>
+                                        
 	                                    <fieldset>
 	                                        <div class="form-group">
 	                                            <label class="col-sm-2 control-label">Số điện thoại</label>

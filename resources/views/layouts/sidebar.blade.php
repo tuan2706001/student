@@ -12,33 +12,17 @@
 	    	<div class="sidebar-wrapper">
 				<div class="user">
 	                <div class="info">
-						<div class="photo">
+						{{-- <div class="photo">
 		                    {{ Session::get('avata') }}
-		                </div>
+		                </div> --}}
 
 	                    <a href="{{ route('student.index') }}">
 	                        <span>
-							<h6> {{ Session::get('nameStudent') }} </h6>
+							<h6> {{ Session::get('lastName') }} {{ Session::get('firstName') }}</h6>
 							</span>
 	                    </a>
 						<div class="clearfix"></div>
 
-	                    {{-- <div class="collapse" id="collapseExample">
-	                        <ul class="nav">
-	                            <li>
-									<a href="../myProfile">
-										<span class="sidebar-mini">Mp</span>
-										<span class="sidebar-normal">My Profile</span>
-									</a>
-								</li>
-	                            <li>
-									<a href="../editProfile">
-										<span class="sidebar-mini">Ep</span>
-										<span class="sidebar-normal">Edit Profile</span>
-									</a>
-								</li>
-	                        </ul>
-	                    </div> --}}
 	                </div>
 	            </div>
 	            <ul class="nav">

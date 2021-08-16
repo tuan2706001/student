@@ -21,7 +21,8 @@ class AuthenticateController extends Controller
         try {
             $student = StudentMarkModel::where('email', $email)->where('password', $password)->firstOrFail();
             $request->session()->put('id', $student->idStudent);
-            $request->session()->put('nameStudent', $student->nameStudent);
+            $request->session()->put('lastName', $student->lastName);
+            $request->session()->put('firstName', $student->firstName);
             return Redirect::route("overview");
         } catch (Exception $e) {
             return Redirect::route("login")->with('error', [

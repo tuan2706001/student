@@ -8,10 +8,20 @@
 	                                <form method="get" action="/" class="form-horizontal">
 	                                    <fieldset>
 	                                        <div class="form-group">
-	                                            <label class="col-sm-2 control-label">Tên giáo vụ</label>
+	                                            <label class="col-sm-2 control-label">Họ</label>
 	                                            <div class="col-sm-10">
-	                                                <input type="text" name="name" class="form-control" 
-													value="{{ $student->nameStudent}}" readonly>
+	                                                <input type="text" name="lastName" class="form-control" 
+													value="{{ $student->lastName}}" readonly>
+	                                            </div>
+	                                        </div>
+	                                    </fieldset>
+
+										<fieldset>
+	                                        <div class="form-group">
+	                                            <label class="col-sm-2 control-label">Tên</label>
+	                                            <div class="col-sm-10">
+	                                                <input type="text" name="firstName" class="form-control" 
+													value="{{ $student->firstName}}" readonly>
 	                                            </div>
 	                                        </div>
 	                                    </fieldset>

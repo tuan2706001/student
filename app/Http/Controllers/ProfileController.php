@@ -16,8 +16,6 @@ class ProfileController extends Controller
     public function index(Request $request)
     {
         $idStudent = $request->session()->get('id');
-
-
         $student = Student::join('grade', 'student.idGrade', '=', 'grade.idGrade')->where('student.idStudent', '=', $idStudent)->first();
         return view('student.index', [
             "student" => $student
@@ -42,14 +40,16 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        $name = $request->get('name');
+        $lastName = $request->get('lastName');
+        $firstName = $request->get('firstName');
         $email = $request->get('email');
         $password = $request->get('password');
         $phone = $request->get('phone');
         $DoB = $request->get('DoB');
         $grade = $request->get('idGrade');
         $student = new Student();
-        $student->namestudent = $name;
+        $student->lastName = $lastName;
+        $student->firstName = $firstName;
         $student->email = $email;
         $student->passWord = $password;
         $student->phone = $phone;
@@ -80,7 +80,8 @@ class ProfileController extends Controller
         $idStudent = $request->session()->get('id');
 
 
-        $student = Student::join('grade', 'student.idGrade', '=', 'grade.idGrade')->where('student.idStudent', '=', $idStudent)->first();
+        $student = Student::join('grade', 'student.idGrade', '=', 'grade.idGrade')
+            ->where('student.idStudent', '=', $idStudent)->first();
         return view('student.edit', [
             "student" => $student
         ]);
@@ -96,12 +97,12 @@ class ProfileController extends Controller
     public function update(Request $request, $id)
     {
         $student = Student::find($id);
-        $student->nameStudent = $request->get('name');
+        $student->lastName = $request->get('lastName');
+        $student->firstName = $request->get('firstName');
         $student->email = $request->get('email');
         $student->passWord = $request->get('password');
         $student->phone = $request->get('phone');
         $student->DoB = $request->get('DoB');
-        $student->idGrade = $request->get('idGrade');
         $student->save();
         return Redirect::route('student.index');
     }
