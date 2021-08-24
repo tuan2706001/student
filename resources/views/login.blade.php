@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="../../assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Paper Dashboard PRO by Creative Tim</title>
+	
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -27,39 +27,28 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="../../assets/css/themify-icons.css" rel="stylesheet">
+    <style>
+        .head{
+            text-align: center;
+            color:rgb(189, 36, 36);
+            text-indent: 50px;
+            letter-spacing: 3px;
+            line-height: 3;
+            font-size: 110%;
+            font-weight: bolder;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-transparent navbar-absolute">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../dashboard/overview.html">Paper Dashboard PRO</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                       <a href="register.html">
-                            Register
-                        </a>
-                    </li>
-					<li>
-                       <a href="../dashboard/overview.html">
-                            Dashboard
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="head">
+            <h3>TRANG WEB XEM ĐIỂM SINH VIÊN BKACAD</h3>
         </div>
     </nav>
 
     <div class="wrapper wrapper-full-page">
-        <div class="full-page login-page" data-color="" data-image="../../assets/img/background/background-2.jpg">
+        <div class="full-page login-page" data-color="" data-image="../../assets/img/background/1529525389019-8e654e7e-4f92-11e8-8e23-2e995a9a3302.jpg">
         <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
             <div class="content">
                 <div class="container">
@@ -109,8 +98,7 @@
         	<footer class="footer footer-transparent">
                 <div class="container">
                     <div class="copyright">
-                        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
-                    </div>
+                       
                 </div>
             </footer>
         </div>

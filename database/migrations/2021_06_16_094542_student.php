@@ -21,7 +21,7 @@ class Student extends Migration
             $table->string('passWord', 50);
             $table->date('DoB');
             $table->string('email', 150)->unique();
-            $table->char('phone', 10)->unique();
+
             $table->unsignedInteger('idGrade');
             $table->foreign('idGrade')->references('idGrade')->on('grade');
         });

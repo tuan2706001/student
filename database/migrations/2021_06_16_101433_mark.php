@@ -19,10 +19,10 @@ class Mark extends Migration
             $table->unsignedInteger('idSubject');
             $table->foreign('idSubject')->references('idSubject')->on('subject');
             $table->primary(['idStudent', 'idSubject']);
-            $table->float('final1', 2, 2);
-            $table->float('final2', 2, 2);
-            $table->float('skill1', 2, 2);
-            $table->float('skill2', 2, 2);
+            $table->float('final1', 4, 2);
+            $table->float('final2', 4, 2);
+            $table->float('skill1', 4, 2);
+            $table->float('skill2', 4, 2);
 
 
 

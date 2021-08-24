@@ -44,7 +44,7 @@ class ProfileController extends Controller
         $firstName = $request->get('firstName');
         $email = $request->get('email');
         $password = $request->get('password');
-        $phone = $request->get('phone');
+
         $DoB = $request->get('DoB');
         $grade = $request->get('idGrade');
         $student = new Student();
@@ -52,7 +52,7 @@ class ProfileController extends Controller
         $student->firstName = $firstName;
         $student->email = $email;
         $student->passWord = $password;
-        $student->phone = $phone;
+
         $student->DoB = $DoB;
         $student->idGrade = $grade;
         $student->save();

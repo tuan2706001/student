@@ -60,14 +60,7 @@
 	                                            </div>
 	                                        </div>
 	                                    </fieldset>
-	                                    <fieldset>
-	                                        <div class="form-group">
-	                                            <label class="col-sm-2 control-label">Số điện thoại</label>
-	                                            <div class="col-sm-10">
-	                                                <input type="text" name="phone" disabled="" class="form-control" value="{{ $student->phone }}" readonly>
-	                                            </div>
-	                                        </div>
-	                                    </fieldset>
+	                                    
 										<a class="btn btn-info btn-fill btn-wd" href="{{ route('student.edit',$student->idStudent) }}">Cập nhập</a>
 	                                </form>
 	                            </div>

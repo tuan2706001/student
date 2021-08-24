@@ -18,7 +18,7 @@ class CheckLogged
     public function handle(Request $request, Closure $next)
     {
         if ($request->session()->exists('id')) {
-            return Redirect::route('overview');
+            return Redirect::route('homeStudent.index');
         } else {
             return $next($request);
         }

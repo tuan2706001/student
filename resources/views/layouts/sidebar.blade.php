@@ -27,16 +27,9 @@
 	            </div>
 	            <ul class="nav">
 	                <li class="active">
-	                    <a data-toggle="collapse" href="#dashboardOverview" aria-expanded="true">
+	                    <a  href="home">
 	                        <i class="ti-panel"></i>
-	                        <p>Xem điểm Cụa Mik
-                            </p>
-	                    </a>
-	                </li>
-					<li>
-	                    <a href="../calendar.html">
-	                        <i class="ti-calendar"></i>
-	                        <p>Calendar</p>
+							<p>Xem điểm</p>
 	                    </a>
 	                </li>
 	            </ul>

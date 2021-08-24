@@ -23,7 +23,7 @@ class AuthenticateController extends Controller
             $request->session()->put('id', $student->idStudent);
             $request->session()->put('lastName', $student->lastName);
             $request->session()->put('firstName', $student->firstName);
-            return Redirect::route("overview");
+            return Redirect::route('homeStudent.index');
         } catch (Exception $e) {
             return Redirect::route("login")->with('error', [
                 "message" => 'Sai Email hoặc password',

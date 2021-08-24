@@ -44,6 +44,7 @@ Route::middleware([CheckLogin::class])->group(function () {
     Route::get("/", function () {
         return view('login');
     });
-    Route::get('/overview', [StudentMarkController::class, 'overview']);
+
+    Route::resource('homeStudent', StudentMarkController::class);
     Route::resource('student', ProfileController::class);
 });

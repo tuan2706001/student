@@ -4,12 +4,9 @@
 						<button id="minimizeSidebar" class="btn btn-fill btn-icon"><i class="ti-more-alt"></i></button>
 					</div>
 	                <div class="navbar-header">
-	                    <button type="button" class="navbar-toggle">
-	                        <span class="sr-only">Toggle navigation</span>
-	                        <span class="icon-bar bar1"></span>
-	                        <span class="icon-bar bar2"></span>
-	                        <span class="icon-bar bar3"></span>
-	                    </button>	                    
+	                    <a href="https://www.bkacad.com/">
+							<img src="https://www.bkacad.com/images/config/logo_1591255072.png">
+						</a>                 
 	                </div>
 
 					<ul class="nav navbar-nav navbar-right">

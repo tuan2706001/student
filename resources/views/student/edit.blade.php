@@ -1,5 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+</head>
+<body>
 @extends('layouts.app')
-@section('content')		
+@section('content')
+
+	
+	
 <div class="card">
 	                            <div class="card-header">
 	                                <h4 class="card-title">Thông tin cá nhân </h4>
@@ -41,8 +54,8 @@
 	                                    <fieldset>
 	                                        <div class="form-group">
 	                                            <label class="col-sm-2 control-label">Password</label>
-	                                            <div class="col-sm-10">
-	                                                <input type="text" name="password" class="form-control" value="{{ $student->passWord }}" >
+	                                            <div class="col-sm-10">													
+	                                                <input type="password" name="password" placeholder="Password" id="pwd" class="form-control" value="{{ $student->passWord }}" >
 	                                            </div>
 	                                        </div>
 	                                    </fieldset>
@@ -55,16 +68,11 @@
 	                                        </div>
 	                                    </fieldset>
                                         
-	                                    <fieldset>
-	                                        <div class="form-group">
-	                                            <label class="col-sm-2 control-label">Số điện thoại</label>
-	                                            <div class="col-sm-10">
-	                                                <input type="text" name="phone" class="form-control" value="{{ $student->phone }}" >
-	                                            </div>
-	                                        </div>
-	                                    </fieldset>
+	                                    
 										<button type="submit" class="btn btn-info btn-fill btn-wd">Lưu thay đổi</button>
 	                                </form>
 	                            </div>
 	                        </div>
 @endsection 
+</body>
+</html>	
