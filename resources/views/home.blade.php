@@ -22,7 +22,7 @@
                         </thead>
                         @foreach ($students as $student )
                         <tbody>
-                           
+                           //////
                                 <tr>    
                                       
                                         <td>{{$student->nameSubject}}</td> 
