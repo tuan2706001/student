@@ -16,8 +16,10 @@ class Mark extends Migration
         Schema::create('mark', function (Blueprint $table) {
             $table->unsignedInteger('idStudent');
             $table->foreign('idStudent')->references('idStudent')->on('student');
+
             $table->unsignedInteger('idSubject');
             $table->foreign('idSubject')->references('idSubject')->on('subject');
+
             $table->primary(['idStudent', 'idSubject']);
             $table->float('final1', 4, 2);
             $table->float('final2', 4, 2);

@@ -15,7 +15,7 @@ class Major extends Migration
     {
         Schema::create('major', function (Blueprint $table) {
             $table->increments('idMajor');
-            $table->string('nameMajor', 50)->unique();
+            $table->string('nameMajor',50)->unique();
         });
     }
 
@@ -26,6 +26,6 @@ class Major extends Migration
      */
     public function down()
     {
-        Schema::drop('major');
+         Schema::drop('major');
     }
 }

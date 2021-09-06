@@ -18,8 +18,7 @@ class Subject extends Migration
             $table->string('nameSubject', 100);
             $table->boolean('final');
             $table->boolean('skill');
-            $table->integer('finalDuration');
-            $table->integer('skillDuration');
+            $table->integer('duration');
         });
     }
 

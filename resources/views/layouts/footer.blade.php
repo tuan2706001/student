@@ -7,10 +7,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="copyright pull-right">
+                    {{-- <div class="copyright pull-right">
                         <a href="https://www.bkacad.com/lien-he.html">
                            Có thắc mắc về điểm số liên hệ
                         </a>
-                        </div>
+                        </div> --}}
                 </div>
             </footer>

@@ -17,11 +17,10 @@ class Student extends Migration
             $table->increments('idStudent');
             $table->string('lastName', 30);
             $table->string('firstName', 30);
-            $table->string('username', 50)->unique();
+            $table->string('email', 150)->unique();
             $table->string('passWord', 50);
             $table->date('DoB');
-            $table->string('email', 150)->unique();
-
+            $table->boolean("gender");
             $table->unsignedInteger('idGrade');
             $table->foreign('idGrade')->references('idGrade')->on('grade');
         });

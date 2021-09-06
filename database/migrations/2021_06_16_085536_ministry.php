@@ -16,11 +16,11 @@ class Ministry extends Migration
         Schema::create('ministry', function (Blueprint $table) {
             $table->increments('idMinistry');
             $table->string('nameMinistry', 50);
-            $table->string('userName', 50)->unique();
-            $table->string('passWord', 50);
-            $table->date('DoB');
             $table->string('email', 100)->unique();
+            $table->string('passWord', 30);
             $table->char('phone', 10)->unique();
+            $table->boolean('role');
+            $table->boolean('block');
         });
     }
 

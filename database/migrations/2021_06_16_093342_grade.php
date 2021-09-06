@@ -15,9 +15,10 @@ class Grade extends Migration
     {
         Schema::create('grade', function (Blueprint $table) {
             $table->increments('idGrade');
-            $table->string('nameGrade', 50);
+            $table->string('nameGrade',50);
             $table->unsignedInteger('idCourse');
-            $table->foreign('idCourse')->references('idCourse')->on('course');
+            $table->foreign('idCourse')->references
+            ('idCourse')->on('course');
             $table->unsignedInteger('idMajor');
             $table->foreign('idMajor')->references('idMajor')->on('major');
         });

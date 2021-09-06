@@ -11,11 +11,10 @@
 			</div>
 	    	<div class="sidebar-wrapper">
 				<div class="user">
-	                <div class="info">
-						{{-- <div class="photo">
-		                    {{ Session::get('avata') }}
-		                </div> --}}
-
+	                <div class="photo">
+	                    <img src="../../assets/img/faces/face-0.jpg" />
+	                </div>
+					<div class="info">
 	                    <a href="{{ route('student.index') }}">
 	                        <span>
 							<h6> {{ Session::get('lastName') }} {{ Session::get('firstName') }}</h6>
@@ -27,7 +26,7 @@
 	            </div>
 	            <ul class="nav">
 	                <li class="active">
-	                    <a  href="home">
+	                    <a  href="homeStudent">
 	                        <i class="ti-panel"></i>
 							<p>Xem điểm</p>
 	                    </a>

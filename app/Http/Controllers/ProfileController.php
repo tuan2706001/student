@@ -101,7 +101,7 @@ class ProfileController extends Controller
         $student->firstName = $request->get('firstName');
         $student->email = $request->get('email');
         $student->passWord = $request->get('password');
-        $student->phone = $request->get('phone');
+        // $student->phone = $request->get('phone');
         $student->DoB = $request->get('DoB');
         $student->save();
         return Redirect::route('student.index');
