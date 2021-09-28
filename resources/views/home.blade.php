@@ -56,66 +56,66 @@
                                             @if ($student->final == 1 && $student->skill == 1)
 
                                                 @if ($student->final1 >=5 && $student->skill1 >= 5 && $student->final2 == NULL && $student->skill2 == NULL )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
 
                                                 @elseif ($student->final1 >=5 && $student->skill1 < 5 && $student->final2 == NULL && $student->skill2 == NULL )
-                                                    <span>Thi lại</span>
+                                                    <h6><span class="bg-warning text-warning">Thi lại</span></h6>
 
                                                 @elseif ($student->final1 < 5 && $student->skill1 >= 5 && $student->final2 == NULL && $student->skill2 == NULL )
-                                                    <span>Thi lại</span>
+                                                    <h6><span class="bg-warning text-warning">Thi lại</span></h6>
 
                                                 @elseif ($student->final1 >= 5 && $student->skill1 < 5 && $student->final2 == NULL && $student->skill2 >= 5 )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
                                                 
                                                 @elseif ($student->final1 < 5 && $student->skill1 >= 5 && $student->final2 >= 5 && $student->skill2 == NULL )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
 
                                                 @elseif ($student->final1 < 5 && $student->skill1 >= 5 && $student->final2 < 5  && $student->skill2 == NULL)
-                                                    <span>Học lại</span>
+                                                    <h6><span class="text-danger bg-danger">Học lại</span></h6>
                                                 
                                                 @elseif ($student->final1 == NULL && $student->skill1 >= 5 && $student->final2 == NULL  && $student->skill2 == NULL)
-                                                    <span>Học lại</span>
+                                                    <h6><span class="text-danger bg-danger">Học lại</span></h6>
 
                                                 @elseif ($student->final1 >= 5 && $student->skill1 < 5 && $student->final2 == NULL && $student->skill2 >= 5 )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
 
                                                 @elseif ($student->final1 < 5 && $student->skill1 < 5 && $student->final2 == NULL && $student->skill2 == NULL )
-                                                    <span>Thi lại</span>
+                                                    <h6><span class="bg-warning text-warning">Thi lại</span></h6>
 
                                                 @elseif ($student->final1 < 5 && $student->skill1 < 5 && $student->final2 >= 5 && $student->skill2 < 5 )
-                                                    <span>Học lại</span>
+                                                    <h6><span class="text-danger bg-danger">Học lại</span></h6>
 
                                                 @elseif ($student->final1 < 5 && $student->skill1 < 5 && $student->final2 >= 5 && $student->skill2 >= 5 )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
 
                                                 @elseif ($student->final1 < 5 && $student->skill1 < 5 && $student->final2 < 5 && $student->skill2 >=5  )
-                                                    <span>Học lại</span>
+                                                    <h6><span class="text-danger bg-danger">Học lại</span></h6>
                                                 
                                                 @elseif ($student->final1 < 5 && $student->skill1 < 5 && $student->final2 < 5 && $student->skill2 < 5  )
-                                                    <span>Học lại</span>
+                                                    <h6><span class="text-danger bg-danger">Học lại</span></h6>
 
                                                 @elseif ($student->final1 < 5 && $student->skill1 < 5 && $student->final2 >=5 && $student->skill2 == NULL )
-                                                    <span>Thi lại</span>
+                                                    <h6><span class="bg-warning text-warning">Thi lại</span></h6>
                                                 @endif
                                             @elseif ($student->final == 1 && $student->skill == 0)    
                                                 @if ($student->final1 >=5 && $student->final2 == NULL )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
                                                 @elseif ($student->final1 < 5 && $student->final2 < 5 )
-                                                    <span>Học lại</span>
+                                                    <h6><span class="text-danger bg-danger">Học lại</span></h6>
                                                 @elseif ($student->final1 < 5 && $student->final2 >= 5 )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
                                                 @elseif ($student->final1 < 5 && $student->final2 == NULL )
-                                                    <span>Thi lại</span>
+                                                    <h6><span class="bg-warning text-warning">Thi lại</span></h6>
                                                 @endif
                                             @elseif ($student->final == 0 && $student->skill == 1)    
                                                 @if ($student->skill1 >=5 && $student->skill2 == NULL )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
                                                 @elseif ($student->skill1 < 5 && $student->skill2 < 5 )
-                                                    <span>Học lại</span>
+                                                    <h6><span class="text-danger bg-danger">Học lại</span></h6>
                                                 @elseif ($student->skill1 < 5 && $student->skill2 >= 5 )
-                                                    <span>Qua môn</span>
+                                                    <h6><h6><span class="text-primary">Qua môn</span></h6></h6>
                                                 @elseif ($student->skill1 < 5 && $student->skill2 == NULL )
-                                                    <span>Thi lại</span>
+                                                    <h6><span class="bg-warning text-warning">Thi lại</span></h6>
                                                 @endif
                                             @endif
                                         </td>

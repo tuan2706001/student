@@ -21,7 +21,7 @@ class StudentMarkController extends Controller
             ->join('subject', 'mark.idSubject', '=', 'subject.idSubject')
             ->select('mark.*', 'subject.nameSubject', 'subject.final', 'subject.skill')->where('student.idStudent', '=', $idStudent)
             ->where('subject.nameSubject', 'like', "%$search%")
-            ->paginate(2);
+            ->paginate(5);
 
         // $grades = Grade::where('nameGrade', 'like', "%$search%");
         // DB::enableQueryLog();    
